@@ -16,3 +16,5 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# 设置默认IP为 192.168.7.1
+sed -i 's/192.168.1.1/192.168.7.1/g' package/base-files/files/bin/config_generate
